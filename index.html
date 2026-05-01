@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 WEB-Programozás I – Előadás Házi Feladat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header class="hero">
+    <div class="track-lines"></div>
+    <div class="glow glow-red"></div>
+    <div class="glow glow-dark"></div>
+
+    <div class="hero-inner">
+      <span class="badge">&#x1F3C1; Formula 1 &mdash; WEB-Programozás I &mdash; 2025/26</span>
+      <h1>F1 Adatkezelő<br><span class="accent-text">Alkalmazás</span></h1>
+      <p class="subtitle">
+        Egy teljes körű webalkalmazás, amely bemutatja a modern webtechnológiák
+        összekapcsolt erejét &mdash; JavaScript, React, Fetch API, Axios és még sok más,
+        Formula 1 témában.
+      </p>
+      <div class="cta-row">
+        <a href="#menuk" class="btn btn-primary">&#x25BA; Menük megtekintése</a>
+        <a href="#rolunk" class="btn btn-outline">A projektről</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Görgessen</span>
+      <div class="scroll-arrow"></div>
+    </div>
+
+    <!-- Dekoratív sebességmérő vonalak -->
+    <div class="speed-lines">
+      <div class="sl sl1"></div>
+      <div class="sl sl2"></div>
+      <div class="sl sl3"></div>
+      <div class="sl sl4"></div>
+      <div class="sl sl5"></div>
+    </div>
+  </header>
+
+  <!-- ══ NAV ══ -->
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">&#x1F3CE; F1 App</span>
+      <div class="nav-links">
+        <a href="index.html" class="active">Főoldal</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="react.html">React</a>
+        <a href="spa.html">SPA</a>
+        <a href="fetchapi.html">Fetch API</a>
+        <a href="axios.html">Axios</a>
+        <a href="oojs.html">OOJS</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ MENÜK ══ -->
+  <section id="menuk">
+    <div class="section-tag">&#x25B6; Navigáció</div>
+    <h2 class="section-title">Az alkalmazás menüpontjai</h2>
+    <p class="section-desc">
+      Az alkalmazás hét különböző technológiát mutat be önálló oldalakkal.
+      Kattintson egy kártyára a megnyitáshoz.
+    </p>
+
+    <div class="menu-grid">
+      <a href="javascript.html" class="menu-card">
+        <div class="card-stripe"></div>
+        <div class="card-icon">&#x26A1;</div>
+        <div class="card-title">JavaScript CRUD</div>
+        <div class="card-desc">Pilóta adatok létrehozása, olvasása, módosítása és törlése tiszta JavaScript segítségével, tömbben tárolva.</div>
+        <div class="card-tag">javascript.html</div>
+      </a>
+
+      <a href="react.html" class="menu-card">
+        <div class="card-stripe"></div>
+        <div class="card-icon">&#x269B;</div>
+        <div class="card-title">React CRUD</div>
+        <div class="card-desc">Komponens alapú CRUD alkalmazás React keretrendszerrel és useState állapotkezeléssel, F1-es adatokkal.</div>
+        <div class="card-tag">react.html</div>
+      </a>
+
+      <a href="spa.html" class="menu-card">
+        <div class="card-stripe"></div>
+        <div class="card-icon">&#x1F5A5;</div>
+        <div class="card-title">SPA &mdash; Single Page App</div>
+        <div class="card-desc">Kétmenüs egyoldalas alkalmazás React komponensekkel – pl. pilóta rangsor és versenynaptár.</div>
+        <div class="card-tag">spa.html</div>
+      </a>
+
+      <a href="fetchapi.html" class="menu-card">
+        <div class="card-stripe"></div>
+        <div class="card-icon">&#x1F310;</div>
+        <div class="card-title">Fetch API CRUD</div>
+        <div class="card-desc">Szerver oldali MySQL adatbázissal kommunikáló CRUD alkalmazás natív Fetch API-val és PHP háttérrel.</div>
+        <div class="card-tag">fetchapi.html</div>
+      </a>
+
+      <a href="axios.html" class="menu-card">
+        <div class="card-stripe"></div>
+        <div class="card-icon">&#x1F504;</div>
+        <div class="card-title">Axios + React CRUD</div>
+        <div class="card-desc">React alapú CRUD alkalmazás Axios HTTP klienssel és szerver oldali adatbázis-kezeléssel.</div>
+        <div class="card-tag">axios.html</div>
+      </a>
+
+      <a href="oojs.html" class="menu-card">
+        <div class="card-stripe"></div>
+        <div class="card-icon">&#x1F3CE;</div>
+        <div class="card-title">OO JavaScript</div>
+        <div class="card-desc">Objektumorientált grafikus JS alkalmazás: class, constructor, extends, super – F1 autó szimulátor.</div>
+        <div class="card-tag">oojs.html</div>
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══ RÓLUNK ══ -->
+  <section id="rolunk">
+    <div class="section-tag">&#x25B6; A projektről</div>
+    <h2 class="section-title">Technológiai áttekintés</h2>
+    <p class="section-desc">
+      Az alkalmazás az előadáson bemutatott összes fontosabb webtechnológiát
+      integrálja egyetlen összefüggő, Formula 1 témájú projektbe.
+    </p>
+
+    <div class="tech-row">
+      <span class="tech-pill">HTML5</span>
+      <span class="tech-pill">CSS3</span>
+      <span class="tech-pill">JavaScript ES6+</span>
+      <span class="tech-pill">React 18</span>
+      <span class="tech-pill">Fetch API</span>
+      <span class="tech-pill">Axios</span>
+      <span class="tech-pill">PHP / PDO</span>
+      <span class="tech-pill">MySQL</span>
+      <span class="tech-pill">OOP JS</span>
+      <span class="tech-pill">SPA</span>
+      <span class="tech-pill">GitHub</span>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">&#x1F3C1; Formula 1 &mdash; WEB-Programozás I</div>
+      <div class="footer-names">
+        <strong>Csík Olivér</strong> &mdash; GKNF9A<br>
+        <strong>Czine Bence</strong> &mdash; VB3707
+      </div>
+      <div class="footer-copy">&copy; 2026 &mdash; Minden jog fenntartva</div>
+    </div>
+  </footer>
+
+</body>
+</html>
