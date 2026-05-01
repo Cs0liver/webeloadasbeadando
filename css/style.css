@@ -571,3 +571,28 @@ a.link:hover { color: var(--accent2); }
   .cta-row { flex-direction: column; align-items: center; }
   .btn { width: 100%; text-align: center; }
 }
+
+/* ════════════════════════════════
+   TÁBLÁZAT ACTION LINKEK (Edit / Delete)
+   ════════════════════════════════ */
+td a {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border: 1px solid var(--border-r);
+  border-radius: 3px;
+  margin-right: 6px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  display: inline-block;
+}
+td a:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
