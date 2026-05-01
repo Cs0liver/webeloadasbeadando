@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript CRUD – F1 WEB-Programozás I</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-logo">&#x1F3CE; F1 App</span>
+      <div class="nav-links">
+        <a href="index.html">Főoldal</a>
+        <a href="javascript.html" class="active">JavaScript</a>
+        <a href="react.html">React</a>
+        <a href="spa.html">SPA</a>
+        <a href="fetchapi.html">Fetch API</a>
+        <a href="axios.html">Axios</a>
+        <a href="oojs.html">OOJS</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ MAIN TARTALOM ══ -->
+  <main class="content-wrapper">
+
+    <h2 class="page-title">JavaScript CRUD</h2>
+
+    <!-- FORM -->
+    <div class="form-box">
+      <form onsubmit="event.preventDefault(); onFormSubmit();">
+        <div>
+          <label>Név *</label>
+          <label class="validation-error hide" id="fullNameValidationError">Ez a mező kötelező!</label>
+          <input type="text" name="fullName" id="fullName" placeholder="Pilóta neve">
+        </div>
+        <div>
+          <label>Csapat</label>
+          <input type="text" name="csapat" id="csapat" placeholder="Csapat neve">
+        </div>
+        <div>
+          <label>Nemzetiség</label>
+          <input type="text" name="city" id="city" placeholder="Nemzetiség">
+        </div>
+        <div class="form-action-buttons">
+          <input type="submit" value="Hozzáadás">
+        </div>
+      </form>
+    </div>
+
+    <!-- TÁBLÁZAT -->
+    <table class="list" id="employeeList">
+      <thead>
+        <tr>
+          <th>Név</th>
+          <th>Csapat</th>
+          <th>Nemzetiség</th>
+          <th>Műveletek</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">&#x1F3C1; Formula 1 &mdash; WEB-Programozás I</div>
+      <div class="footer-names">
+        <strong>Csík Olivér</strong> &mdash; GKNF9A<br>
+        <strong>Czine Bence</strong> &mdash; VB3707
+      </div>
+      <div class="footer-copy">&copy; 2026 &mdash; Minden jog fenntartva</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
